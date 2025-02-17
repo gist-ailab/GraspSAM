@@ -1,0 +1,23 @@
+# folder
+*__pycache__*
+checkpoints
+output
+final_result
+tensorboard
+dino
+real_imgs
+paper_fig
+pretrained_checkpoint
+
+
+
+
+# file
+*.pth
+*.jpg
+*.png
+*.safetensors
+
+*.pt
+pretrained_checkpoint/*.pt
+pretrained_checkpoint/*.pth
