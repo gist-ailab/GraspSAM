@@ -173,10 +173,10 @@ def main(args):
                                        start=0.9, end=1.0, seen=False, train=False)
     
     elif args.dataset_name == "grasp_anything":
-        train_dataset = GraspAnythingDataset(root=args.root, include_mask=True, 
+        train_dataset = GraspAnythingDataset(root=args.root, crop_size=1024, include_mask=True, 
                                              random_rotate=False, random_zoom=False,
                                              start=0.0, end=0.9, seen=args.seen, train=True)
-        test_dataset = GraspAnythingDataset(root=args.root, include_mask=True, 
+        test_dataset = GraspAnythingDataset(root=args.root, crop_size=1024, include_mask=True, 
                                             random_rotate=False, random_zoom=False,
                                             start=0.9, end=1.0, seen=False, train=False)
             
